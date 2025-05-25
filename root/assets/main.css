@@ -1,3 +1,11 @@
+.process hr {
+  border-color: #fff !important;
+}
+
+.about-us hr {
+  border-color: #fff !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -197,7 +205,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .5;
+  opacity: 0.5;
   background-image: -webkit-gradient(linear, left top, right top, from(black), to(transparent));
   background-image: linear-gradient(90deg, black, transparent);
 }
@@ -207,8 +215,8 @@ ul {
   padding: 10px 40px;
   border-radius: 5px;
   text-decoration: none;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
   color: #fff;
   font-weight: bold;
   width: 3000px;
@@ -220,6 +228,10 @@ ul {
 
 .main-screen {
   padding: 60px 0;
+}
+
+.main-screen h5 {
+  color: #00e1ff;
 }
 
 .main-screen .about-us h5 {
@@ -250,5 +262,177 @@ ul {
 
 .main-screen .about-us .about-btn .cta-btn:hover {
   background: #047786;
+}
+
+.main-screen .services {
+  background: #f0f0f044;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.main-screen .services .card {
+  border-radius: 4px;
+}
+
+.main-screen .services .card .card-body .card-text {
+  padding: 10px;
+  font-size: 12px !important;
+  color: #5f5f5f;
+}
+
+.main-screen .services .card .card-body .card-text h5 {
+  color: #00e1ff;
+}
+
+.main-screen .services .card .card-body .card-btn a {
+  text-decoration: none;
+  color: #00e1ff;
+}
+
+.main-screen .services .card .description {
+  padding: 20px 0;
+}
+
+.main-screen .services .card .description .heading h5 {
+  color: #00e1ff;
+}
+
+.main-screen .services .card .description .d-text {
+  font-size: 13px;
+  color: #5f5f5f;
+  margin-bottom: 10px;
+}
+
+.main-screen .services .card .description .d-btn {
+  text-decoration: none;
+  color: #00e1ff;
+  -webkit-transition: all ease 50ms;
+  transition: all ease 50ms;
+  padding: 5px 20px;
+}
+
+.main-screen .process {
+  padding: 20px 0;
+}
+
+.main-screen .process h1 {
+  color: #00e1ff;
+}
+
+.main-screen .process h2,
+.main-screen .process h4 {
+  color: #047786;
+}
+
+.main-screen .why-us {
+  background: #f0f0f044;
+  padding: 80px 0;
+}
+
+.main-screen .why-us h2 {
+  color: #047786;
+}
+
+.main-screen .why-us .text-body h5 {
+  color: #047786;
+}
+
+.main-screen .why-us .text-body p {
+  color: #5f5f5f;
+}
+
+.main-screen .why-us .text-body i {
+  font-size: 60px;
+  color: #00e1ff;
+}
+
+@media only screen and (max-width: 720px) {
+  .service .card {
+    height: 550px;
+  }
+}
+
+.footer {
+  background: #047786;
+  padding: 30px 0;
+  color: white;
+}
+
+.footer .mini-desc p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer .social-icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .social-icons a i {
+  font-size: 40px;
+  margin-right: 10px;
+  -webkit-transition: all ease 250ms;
+  transition: all ease 250ms;
+}
+
+.footer .social-icons a i:hover {
+  color: #00e1ff;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  padding: 5px 0;
+  -webkit-transition: all ease 250ms;
+  transition: all ease 250ms;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer ul li:hover {
+  border-bottom: 1px solid #00e1ff;
+  padding-left: 10px;
+}
+
+.footer .extra a {
+  margin: 10px !important;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #00e1ff;
+}
+
+.footer .address {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #00e1ff;
+  -webkit-transition: all ease 250ms;
+  transition: all ease 250ms;
+}
+
+.footer .address:hover {
+  margin-left: 5px;
+}
+
+.footer .contact-line {
+  padding: 20px;
+  background: #00e1ff;
+}
+
+.footer .contact-line a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footnote {
+  color: #f8f8f8;
+  font-weight: 300;
+  font-size: 15px;
 }
 /*# sourceMappingURL=main.css.map */
