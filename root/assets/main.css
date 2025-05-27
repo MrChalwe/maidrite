@@ -7,13 +7,12 @@
 }
 
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
-
-* {
-  font-family: Montserrat;
+  font-family: Arial, sans-serif;
 }
 
 ul {
@@ -227,7 +226,7 @@ ul {
 }
 
 .main-screen {
-  padding: 60px 0;
+  padding-top: 60px;
 }
 
 .main-screen h5 {
@@ -434,5 +433,96 @@ ul {
   color: #f8f8f8;
   font-weight: 300;
   font-size: 15px;
+}
+
+/* Custom Styles */
+.timeline-section {
+  padding: 5rem 0;
+  overflow-x: hidden;
+}
+
+.timeline-item {
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+  margin-bottom: 4rem;
+}
+
+.timeline-item:nth-child(even) {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.timeline-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-image img {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.timeline-image:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.timeline-content {
+  padding: 2rem;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .timeline-item:nth-child(odd) .timeline-content {
+    padding-left: 4rem;
+  }
+  .timeline-item:nth-child(even) .timeline-content {
+    padding-right: 4rem;
+  }
+}
+
+/* Vertical Line */
+.timeline-section::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #dee2e6;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .timeline-section::before {
+    display: none;
+  }
+  .timeline-content {
+    text-align: center;
+  }
+  .timeline-item {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  .timeline-item:nth-child(even) {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
