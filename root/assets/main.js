@@ -1,3 +1,5 @@
+AOS.init();
+
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.getElementById("mainNavbar");
   const carousel = document.querySelector(".carousel");
