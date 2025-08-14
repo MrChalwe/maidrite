@@ -77,11 +77,31 @@
       .thumbnail-strip::-webkit-scrollbar-thumb:hover {
         background: #999;
       }
+      /* Hom BTN */
+      .btn-home {
+        display: inline-block;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, #00e1ff, #047786); /* gold-orange gradient */
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 30px;
+        box-shadow: 0 4px 15px #04778663;
+        transition: all 0.3s ease;
+      }
+
+      .btn-home:hover {
+        background: linear-gradient(135deg, #047786, #00e1ff); /* reverse gradient */
+        box-shadow: 0 6px 20px #047786;
+        transform: translateY(-2px);
+      }
     </style>
   </head>
   <body>
     <div class="container py-5 content-blur">
-      <h1>Our Gallery</h1>
+      <a href="index.html" class="btn-home">Home</a>
+
+      <h1 class="mt-3">Our Gallery</h1>
 
       <div class="row g-3">
         <div class="col-6 col-md-4 col-lg-3">
